@@ -1,0 +1,33 @@
+{
+  "name": "stream-chat-react-native-template",
+  "description": "React Native template with Stream Chat",
+  "version": "1.0.0",
+  "author": "Mads Røskar <mads.roskar@getstream.io>",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "app/main.js",
+  "scripts": {
+    "lint-fix": "semistandard --fix ./*.js"
+  },
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madsroskar/stream-chat-react-native-template.git"
+  },
+  "homepage": "git+https://github.com/madsroskar/stream-chat-react-native-template.git#readme",
+  "keywords": [
+    "react-native",
+    "typescript",
+    "jest",
+    "template",
+    "boilerplate",
+    "chat",
+    "stream"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "semistandard": "^16.0.1"
+  }
+}
