@@ -1,7 +1,7 @@
 {
   "name": "stream-chat-react-native-template",
   "description": "React Native template with Stream Chat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Mads Røskar <mads.roskar@getstream.io>",
   "license": "SEE LICENSE IN LICENSE",
   "main": "app/main.js",
