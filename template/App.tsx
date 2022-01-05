@@ -37,6 +37,7 @@ import {
   useOverlayContext,
 } from "stream-chat-react-native";
 import { useStreamChatTheme } from "./useStreamChatTheme";
+import {HelpScreen} from './HelpScreen';
 
 /**
  * This will be removed in the future.
