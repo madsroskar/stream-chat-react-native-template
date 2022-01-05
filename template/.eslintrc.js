@@ -1,11 +1,16 @@
 module.exports = {
-  root: true,
-  extends: '@react-native-community',
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ['@react-native-community/eslint-config'],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
   plugins: ['@typescript-eslint'],
   rules: {
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
     'react-native/no-inline-styles': 0,
   },
 };

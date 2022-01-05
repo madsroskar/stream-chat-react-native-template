@@ -1,4 +1,4 @@
 module.exports = {
-  placeholderName: "StreamChatStarter",
-  templateDir: "template",
+	placeholderName: 'StreamChatStarter',
+	templateDir: 'template',
 };
