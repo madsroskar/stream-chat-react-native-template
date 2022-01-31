@@ -12,7 +12,6 @@ import {
 
 import {AppContext} from '../AppContext';
 import {useStreamChat} from '../useStreamChat';
-import type {NavigationParamsList as NavigationParametersList} from '../Navigation';
 import type {
   LocalAttachmentType,
   LocalChannelType,
@@ -22,6 +21,7 @@ import type {
   LocalReactionType,
   LocalUserType,
 } from '../types';
+import {NavigationParametersList} from '../Navigation';
 
 interface ThreadScreenProps {
   navigation: StackNavigationProp<NavigationParametersList, 'Thread'>;
