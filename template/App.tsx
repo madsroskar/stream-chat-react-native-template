@@ -7,15 +7,7 @@ import {
 import {OverlayProvider} from 'stream-chat-react-native';
 
 import {HelpScreen} from './HelpScreen';
-import type {
-  LocalAttachmentType,
-  LocalChannelType,
-  LocalCommandType,
-  LocalEventType,
-  LocalMessageType,
-  LocalReactionType,
-  LocalUserType,
-} from './types';
+import type {StreamChatTypes} from './types';
 import {useStreamChatTheme} from './useStreamChatTheme';
 import {AppStateProvider} from './AppContext';
 import {useStreamChat} from './useStreamChat';
@@ -31,15 +23,7 @@ function AppOverlay({children}: AppOverlayProps) {
   const {bottom} = useSafeAreaInsets();
 
   return (
-    <OverlayProvider<
-      LocalAttachmentType,
-      LocalChannelType,
-      LocalCommandType,
-      LocalEventType,
-      LocalMessageType,
-      LocalReactionType,
-      LocalUserType
-    >
+    <OverlayProvider<StreamChatTypes>
       bottomInset={bottom}
       i18nInstance={i18nInstance}
       value={{style: theme}}>

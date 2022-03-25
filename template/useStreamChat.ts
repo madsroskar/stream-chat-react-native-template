@@ -3,7 +3,7 @@ import {Streami18n} from 'stream-chat-react-native';
 import {StreamChat} from 'stream-chat';
 import Config from 'react-native-config';
 
-import type {Client, LocalUserType} from '../types';
+import type {Client, StreamChatTypes} from './types';
 
 const useConnectUser = ({
   client,
@@ -11,7 +11,7 @@ const useConnectUser = ({
   userToken,
 }: {
   client: Client;
-  user: LocalUserType;
+  user: StreamChatTypes['userType'];
   userToken: string;
 }) => {
   const [userIsConnected, setUserConnected] = useState(false);

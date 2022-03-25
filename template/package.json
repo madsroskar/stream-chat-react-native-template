@@ -11,8 +11,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@gorhom/bottom-sheet": "^3.6.4",
-    "@react-native-community/blur": "https://github.com/Kureev/react-native-blur/archive/refs/tags/v3.6.1.tar.gz",
+    "@gorhom/bottom-sheet": "3.6.4",
     "@react-native-community/cameraroll": "^4.1.2",
     "@react-native-community/netinfo": "^7.1.7",
     "@react-navigation/elements": "^1.2.1",
@@ -36,7 +35,7 @@
     "react-native-share": "^7.3.2",
     "react-native-svg": "^12.1.1",
     "stream-chat": "^5.1.1",
-    "stream-chat-react-native": "^3.10.2"
+    "stream-chat-react-native": "4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

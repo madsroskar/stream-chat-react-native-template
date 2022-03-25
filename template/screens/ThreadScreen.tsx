@@ -12,15 +12,7 @@ import {
 
 import {AppContext} from '../AppContext';
 import {useStreamChat} from '../useStreamChat';
-import type {
-  LocalAttachmentType,
-  LocalChannelType,
-  LocalCommandType,
-  LocalEventType,
-  LocalMessageType,
-  LocalReactionType,
-  LocalUserType,
-} from '../types';
+import type {StreamChatTypes} from '../types';
 import {NavigationParametersList} from '../Navigation';
 
 interface ThreadScreenProps {
@@ -48,7 +40,7 @@ export const ThreadScreen: React.FC<ThreadScreenProps> = ({
     <SafeAreaView>
       <Chat client={client} i18nInstance={i18nInstance}>
         <Channel
-          channel={channel as any}
+          channel={channel}
           keyboardVerticalOffset={headerHeight}
           thread={thread}>
           <View
@@ -56,15 +48,7 @@ export const ThreadScreen: React.FC<ThreadScreenProps> = ({
               flex: 1,
               justifyContent: 'flex-start',
             }}>
-            <Thread<
-              LocalAttachmentType,
-              LocalChannelType,
-              LocalCommandType,
-              LocalEventType,
-              LocalMessageType,
-              LocalReactionType,
-              LocalUserType
-            >
+            <Thread<StreamChatTypes>
               onThreadDismount={() => {
                 setThread(null);
               }}
