@@ -20,7 +20,7 @@ import type {
   LocalReactionType,
   LocalUserType,
 } from '../types';
-import {NavigationParametersList} from '../App';
+import {NavigationParametersList} from '../Navigation';
 import {useStreamChat} from '../useStreamChat';
 
 interface ChannelScreenProps {
