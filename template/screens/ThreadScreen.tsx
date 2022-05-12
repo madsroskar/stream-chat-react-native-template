@@ -40,6 +40,7 @@ export const ThreadScreen: React.FC<ThreadScreenProps> = ({
     <SafeAreaView>
       <Chat client={client} i18nInstance={i18nInstance}>
         <Channel
+          threadList
           channel={channel}
           keyboardVerticalOffset={headerHeight}
           thread={thread}>
