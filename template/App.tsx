@@ -4,6 +4,7 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {OverlayProvider} from 'stream-chat-react-native';
 
 import {HelpScreen} from './HelpScreen';
@@ -12,7 +13,6 @@ import {useStreamChatTheme} from './useStreamChatTheme';
 import {AppStateProvider} from './AppContext';
 import {useStreamChat} from './useStreamChat';
 import {Navigation} from './Navigation';
-import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 interface AppOverlayProps {
   children?: ReactElement;
