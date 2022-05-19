@@ -12,6 +12,7 @@ import {useStreamChatTheme} from './useStreamChatTheme';
 import {AppStateProvider} from './AppContext';
 import {useStreamChat} from './useStreamChat';
 import {Navigation} from './Navigation';
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 interface AppOverlayProps {
   children?: ReactElement;
@@ -23,12 +24,14 @@ function AppOverlay({children}: AppOverlayProps) {
   const {bottom} = useSafeAreaInsets();
 
   return (
-    <OverlayProvider<StreamChatTypes>
-      bottomInset={bottom}
-      i18nInstance={i18nInstance}
-      value={{style: theme}}>
-      {children}
-    </OverlayProvider>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <OverlayProvider<StreamChatTypes>
+        bottomInset={bottom}
+        i18nInstance={i18nInstance}
+        value={{style: theme}}>
+        {children}
+      </OverlayProvider>
+    </GestureHandlerRootView>
   );
 }
 
