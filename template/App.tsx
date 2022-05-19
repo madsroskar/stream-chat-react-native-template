@@ -4,6 +4,7 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {OverlayProvider} from 'stream-chat-react-native';
 
 import {HelpScreen} from './HelpScreen';
@@ -23,12 +24,14 @@ function AppOverlay({children}: AppOverlayProps) {
   const {bottom} = useSafeAreaInsets();
 
   return (
-    <OverlayProvider<StreamChatTypes>
-      bottomInset={bottom}
-      i18nInstance={i18nInstance}
-      value={{style: theme}}>
-      {children}
-    </OverlayProvider>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <OverlayProvider<StreamChatTypes>
+        bottomInset={bottom}
+        i18nInstance={i18nInstance}
+        value={{style: theme}}>
+        {children}
+      </OverlayProvider>
+    </GestureHandlerRootView>
   );
 }
 
