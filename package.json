@@ -6,8 +6,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "main": "app/main.js",
   "scripts": {
-    "lint-fix": "semistandard --fix ./*.js",
-    "semantic-release": "semantic-release"
+    "lint-fix": "semistandard --fix ./*.js"
   },
   "files": [
     "template",
@@ -29,7 +28,6 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "semistandard": "^16.0.1",
-    "semantic-release": "^18.0.1"
+    "semistandard": "^16.0.1"
   }
 }
